@@ -49,9 +49,6 @@ const LanguagesSection = () => {
                 style={{ width: `${lang.percent}%` }}
                 ></div>
             </div>
-            {lang.credential && (
-                <p className="text-xs text-gray-400 mt-1 italic">{lang.credential}</p>
-            )}
             </div>
         ))}
         </div>
