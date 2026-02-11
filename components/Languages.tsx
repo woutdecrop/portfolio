@@ -9,13 +9,6 @@ const languages = [
   { name: "Italian", level: "A2", percent: 40 },
 ];
 
-
-
-
-
-
-
-
 const languageTimeline = [
   { year: "2023-2024", language: "Spanish", course: "Praktisch Spaans 2", level: "A2", start: "2023-09-01", end: "2024-01-01", certificateDate: "2024-01-01", score: 14 },
   { year: "2024-2025", language: "Italian", course: "Praktisch Italiaans 1", level: "A1", start: "2024-09-01", end: "2024-12-30", certificateDate: "2024-12-30", score: 14 },
@@ -37,14 +30,6 @@ const LanguagesSection = () => {
   return (
     <section id="languages" className="py-20 bg-black text-white">
     <div className="max-w-5xl mx-auto px-4">
-        <p className="text-orange-500 font-medium tracking-widest uppercase text-sm mb-4 text-center">
-            Expertise
-          </p>
-        <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white text-center">
-        Languages
-        </h2>
-
-
       <div className="max-w-5xl mx-auto px-4">
         <p className="text-orange-500 font-medium tracking-widest uppercase text-sm mb-4 text-center">
           Expertise
@@ -74,8 +59,8 @@ const LanguagesSection = () => {
                 {/* Only Spanish: moving shine */}
                 {lang.name === "Spanish" && (
                   <div
-                    className="absolute top-0 left-0 h-4 w-1/5 bg-orange-300 rounded-full animate-loading-segment"
-                    style={{ maxWidth: `${lang.percent}%` }}
+                    className="absolute top-0 left-0 h-full w-1/5 bg-orange-300 rounded-full animate-loading-segment"
+                    style={{ maxWidth: `${88}%` }}
                   ></div>
                 )}
               </div>

@@ -34,6 +34,7 @@ export function Experience() {
     degree: 'Master of Bioinformatics',
     institution: 'Aarhus University',
     period: '2020 - 2021',
+    erasmus: 'Erasmus',
     description: 'Erasmus semester in Aarhus Denmark. Hands-on projects: image recognition and regression models. Skills: Python, Machine Learning, CNNs.',
   },
   {
@@ -124,6 +125,13 @@ export function Experience() {
                       <div className="absolute -top-3 -right-3 bg-gradient-to-r from-orange-500 to-orange-400 text-black text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
                         <Award size={14} />
                         {edu.honor}
+                      </div>
+                    )}
+
+                    {edu.erasmus && (
+                      <div className="absolute -top-3 -right-3 bg-gradient-to-r from-orange-100 to-orange-200 text-black text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
+                        <Award size={14} />
+                        {edu.erasmus}
                       </div>
                     )}
 

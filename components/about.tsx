@@ -7,7 +7,7 @@ const AboutSection = () => {
               About Me
             </p>
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white mb-6">Enthusiast,<br />
-              <span className="bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent">powered by data.</span>
+              <span className="bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent">building AI for the ocean.</span>
             </h2>
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
