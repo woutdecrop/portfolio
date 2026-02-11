@@ -48,17 +48,6 @@ export function Contact() {
                   </a>
                 </div>
               </div>
-              
-              <div className="flex items-start">
-                <div className="p-3 bg-blue-100 rounded-lg mr-4">
-                  <Phone className="text-blue-600" size={24} />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1 text-white">Phone</h4>
-                  <p className="text-gray-200 hover:text-white transition-colors">+1 (555) 123-4567</p>
-                </div>
-              </div>
-              
               <div className="flex items-start">
                 <div className="p-3 bg-blue-100 rounded-lg mr-4">
                   <MapPin className="text-blue-600" size={24} />

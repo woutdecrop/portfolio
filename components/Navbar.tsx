@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="flex gap-3">
         <Link href="#projects">
           <Button variant="default" size="sm" className="bg-orange-500/20 border border-orange-500/50 text-orange-400 hover:bg-orange-500/40 transition-colors duration-200 cursor-pointer">
-            Projects
+            Home
           </Button>
         </Link>
         <Link href="#about">
@@ -19,11 +19,21 @@ export default function Navbar() {
             About
           </Button>
         </Link>
-        <a href="mailto:youremail@example.com">
-          <Button size="sm" className="bg-orange-500/20 border border-orange-500/50 text-orange-400 hover:bg-orange-500/40 transition-colors duration-200 cursor-pointer">
+        <Link href="#publications">
+          <Button variant="default" size="sm" className="bg-orange-500/20 border border-orange-500/50 text-orange-400 hover:bg-orange-500/40 transition-colors duration-200 cursor-pointer">
+            Publications
+          </Button>
+        </Link>
+        <Link href="#skills">
+          <Button variant="default" size="sm" className="bg-orange-500/20 border border-orange-500/50 text-orange-400 hover:bg-orange-500/40 transition-colors duration-200 cursor-pointer">
+            Skills
+          </Button>
+        </Link>
+        <Link href="#contact">
+          <Button variant="default" size="sm" className="bg-orange-500/20 border border-orange-500/50 text-orange-400 hover:bg-orange-500/40 transition-colors duration-200 cursor-pointer">
             Contact
           </Button>
-        </a>
+        </Link>
       </div>
     </nav>
   )

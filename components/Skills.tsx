@@ -6,21 +6,20 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     title: "Programming Languages",
-    skills: ["Python", "R", "Julia", "TypeScript", "SQL", "Bash"],
+    skills: ["Python", "R", "Julia", "Matlab", "SQL", "Bash"],
   },
   {
     title: "Machine Learning",
-    skills: ["PyTorch", "TensorFlow", "scikit-learn", "XGBoost", "Graph Neural Networks"],
-  },
-  {
-    title: "Bioinformatics",
-    skills: ["Scanpy", "Seurat", "DESeq2", "STAR", "CellRanger", "Nextflow"],
+    skills: ["PyTorch", "TensorFlow", "scikit-learn", "Keras", ],
   },
   {
     title: "Tools & Platforms",
-    skills: ["Git", "Docker", "AWS", "Slurm", "Jupyter", "VS Code"],
+    skills: ["Git", "Docker", "Jupyter", "VS Code"],
   },
 ];
+
+
+
 
 const SkillsSection = () => {
   return (

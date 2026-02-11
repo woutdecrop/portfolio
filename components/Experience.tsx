@@ -3,45 +3,70 @@ import { Briefcase, GraduationCap, Award } from 'lucide-react';
 export function Experience() {
   const workExperience = [
     {
-      position: 'Senior Researcher',
-      company: 'Research Institute',
-      period: '2023 - Present',
-      description: 'Leading research initiatives in machine learning and data science, publishing papers, and mentoring junior researchers.',
+      position: 'Marine AI Engineer',
+      company: 'VLIZ - Flanders Marine Institute',
+      period: 'Feb 2023 - Present',
+      description: 'Working fulltime on marine AI projects, developing machine learning pipelines and AI applications for oceanographic research in Oostende, Belgium.',
     },
     {
-      position: 'Data Scientist',
-      company: 'Tech Company',
-      period: '2021 - 2023',
-      description: 'Developed predictive models and analytics solutions, collaborated with cross-functional teams.',
+      position: 'Engineering Intern, Marine Observatory Centre',
+      company: 'VLIZ - Flanders Marine Institute',
+      period: 'Jul 2022 - Sep 2022',
+      description: 'Internship focusing on MongoDB, updating data pipelines, machine learning techniques, and several research boat days in the North Sea.',
     },
     {
-      position: 'Research Assistant',
-      company: 'University Lab',
-      period: '2019 - 2021',
-      description: 'Conducted research experiments, analyzed data, and contributed to academic publications.',
+      position: 'Engineering Intern, Marine Robotics Centre',
+      company: 'VLIZ - Flanders Marine Institute',
+      period: 'Aug 2021',
+      description: 'Hands-on experience operating on a boat, working with Grafana, MySQL, sonar data, and learning the inner workings of a research organization.',
     },
   ];
 
   const education = [
-    {
-      degree: 'Ph.D. in Computer Science',
-      institution: 'University Name',
-      period: '2019 - 2023',
-      description: 'Thesis: Advanced Machine Learning Techniques',
-    },
-    {
-      degree: 'M.S. in Data Science',
-      institution: 'University Name',
-      period: '2017 - 2019',
-      description: 'Focus: Statistical Learning and Analytics',
-    },
-    {
-      degree: 'B.S. in Computer Science',
-      institution: 'University Name',
-      period: '2013 - 2017',
-      description: 'Graduated with Honors',
-    },
-  ];
+  {
+    degree: 'Master of Bioscience Engineering - BE, Cell and Gene Biotechnology (major Computational Biology)',
+    institution: 'Universiteit Gent',
+    period: '2020 - 2022',
+    honor: 'Magna Cum Laude',
+    description: 'Focus on computational biology, bioinformatics, and machine learning applications in biosciences.',
+  },
+  {
+    degree: 'Master of Bioinformatics',
+    institution: 'Aarhus University',
+    period: '2020 - 2021',
+    description: 'Erasmus semester in Aarhus Denmark. Hands-on projects: image recognition and regression models. Skills: Python, Machine Learning, CNNs.',
+  },
+  {
+    degree: 'Bachelor of Bioscience Engineering - BE, Cell and Gene Biotechnology',
+    institution: 'Universiteit Gent',
+    period: '2017 - 2020',
+    honor: 'Cum Laude',
+    description: 'Focused on cell and gene biotechnology, bioinformatics, and practical lab experience.',
+  },
+];
+
+
+// const education = [
+//   {
+//     degree: 'Master of Bioscience Engineering - BE, Cell and Gene Biotechnology (major Computational Biology)',
+//     institution: 'Universiteit Gent',
+//     period: '2020 - 2022',
+//     description: 'Graduated Magma cum laude. Focus on computational biology, bioinformatics, and machine learning applications in biosciences.',
+//   },
+//   {
+//     degree: 'Master of Bioinformatics',
+//     institution: 'Aarhus University',
+//     period: '2020 - 2021',
+//     description: 'International experience with hands-on projects: transcriptome analysis using RNA-seq, tissue engineering papers, image recognition, gene finding, and regression models. Skills: Python, Machine Learning, CNNs.',
+//   },
+//   {
+//     degree: 'Bachelor of Bioscience Engineering - BE, Cell and Gene Biotechnology',
+//     institution: 'Universiteit Gent',
+//     period: '2017 - 2020',
+//     description: 'Graduated cum laude. Focused on cell and gene biotechnology, bioinformatics, and practical lab experience.',
+//   },
+// ];
+
 
   // const awards = [
   //   'Best Paper Award - International Conference on AI (2025)',
@@ -67,7 +92,7 @@ export function Experience() {
               {workExperience.map((job, index) => (
                 <div key={index} className="relative pl-8 border-l-2 border-orange-500/30">
                   <div className="absolute w-4 h-4 bg-orange-500 rounded-full -left-[9px] top-0"></div>
-                  <div className="bg-gray-900 p-4 rounded-lg shadow-sm border border-orange-500/20">
+                  <div className="relative bg-gray-900 p-6 rounded-xl shadow-sm border border-orange-500/20">
                     <h4 className="text-xl mb-1 text-white">{job.position}</h4>
                     <p className="text-gray-400 mb-2">{job.company}</p>
                     <p className="text-sm text-gray-500 mb-3">{job.period}</p>
@@ -88,8 +113,21 @@ export function Experience() {
             <div className="space-y-6">
               {education.map((edu, index) => (
                 <div key={index} className="relative pl-8 border-l-2 border-orange-500/30">
+                  {/* Timeline dot */}
                   <div className="absolute w-4 h-4 bg-orange-500 rounded-full -left-[9px] top-0"></div>
-                  <div className="bg-gray-900 p-4 rounded-lg shadow-sm border border-orange-500/20">
+
+                  {/* Card */}
+                  <div className="relative bg-gray-900 p-6 rounded-xl shadow-sm border border-orange-500/20">
+
+                    {/* Honor badge */}
+                    {edu.honor && (
+                      <div className="absolute -top-3 -right-3 bg-gradient-to-r from-orange-500 to-orange-400 text-black text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
+                        <Award size={14} />
+                        {edu.honor}
+                      </div>
+                    )}
+
+                    {/* Card content */}
                     <h4 className="text-xl mb-1 text-white">{edu.degree}</h4>
                     <p className="text-gray-400 mb-2">{edu.institution}</p>
                     <p className="text-sm text-gray-500 mb-3">{edu.period}</p>
@@ -98,6 +136,7 @@ export function Experience() {
                 </div>
               ))}
             </div>
+
           </div>
         </div>
 

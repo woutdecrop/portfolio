@@ -17,7 +17,7 @@ const HeroSection = () => {
         </div>
 
         <p className="text-orange-500 font-semibold tracking-widest uppercase text-sm mb-6">
-          Marine Data Engineer
+          Marine AI Engineer
         </p>
 
         <h1 className="text-7xl font-bold text-white mb-2">

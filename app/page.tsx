@@ -11,6 +11,8 @@ import SkillsSection from "@/components/Skills"
 import FooterSection from "@/components/Footer"
 import Contact from "@/components/Contact"
 import HeroSection from "@/components/Hero"
+import RepoSection from "@/components/Repos"
+import LanguagesSection from "@/components/Languages"
  // <- import Navbar
 
 export default function Home() {
@@ -29,12 +31,15 @@ export default function Home() {
       <PublicationsSection />
 
       {/* Skills section */}
+      <RepoSection />
+      {/* About section */}
+      <LanguagesSection />
+
+      {/* Skills section */}
       <SkillsSection />
 
       {/* Footer section */}
       <FooterSection />
-      {/* Contact section */}
-      <Contact />
     </>
   )
 }
