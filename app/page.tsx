@@ -27,16 +27,17 @@ export default function Home() {
       {/* Experience section */}
       <Experience />
 
+      {/* Skills section */}
+      <SkillsSection />
+      
+      {/* About section */}
+      <LanguagesSection />
+
       {/* Publications section */}
       <PublicationsSection />
 
       {/* Skills section */}
       <RepoSection />
-      {/* About section */}
-      <LanguagesSection />
-
-      {/* Skills section */}
-      <SkillsSection />
 
       {/* Footer section */}
       <FooterSection />

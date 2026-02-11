@@ -1,18 +1,4 @@
-import React from "react";
-
 import { Flag, Loader2 } from "lucide-react";
-const languages = [
-  { name: "Dutch", level: "Native", percent: 100 },
-  { name: "English", level: "Fluent", percent: 100 },
-  { name: "Spanish", level: "B1", percent: 70 },
-  { name: "French", level: "B1", percent: 50 },
-  { name: "Italian", level: "A2", percent: 40 },
-];
-
-
-
-
-
 
 
 
@@ -23,6 +9,13 @@ const languageTimeline = [
   { year: "2024-2025", language: "Italian", course: "Praktisch Italiaans 2", level: "A2", start: "2025-01-01", end: "2025-06-30", certificateDate: "2025-06-30", score: 14 },
   { year: "2025-2026", language: "Spanish", course: "Praktisch Spaans 3", level: "B1", start: "2025-09-01", end: "2025-12-18", certificateDate: "2025-12-18", score: 15 },
   { year: "2025-2026", language: "Spanish", course: "Praktisch Spaans 4", level: "B2", start: "2026-01-01", end: "2026-06-25", certificateDate: "2026-06-25" },
+];
+const languages = [
+  { name: "Dutch", level: "Native", percent: 100 },
+  { name: "English", level: "Fluent", percent: 100 },
+  { name: "Spanish", level: "B1", percent: 70 },
+  { name: "French", level: "B1", percent: 50 },
+  { name: "Italian", level: "A2", percent: 40},
 ];
 
 const LanguagesSection = () => {
@@ -45,44 +38,26 @@ const LanguagesSection = () => {
         </h2>
 
 
-      <div className="max-w-5xl mx-auto px-4">
-        <p className="text-orange-500 font-medium tracking-widest uppercase text-sm mb-4 text-center">
-          Expertise
-        </p>
-
-        <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white text-center mb-10">
-          Languages
-        </h2>
-
         <div className="space-y-6">
-          {languages.map((lang, index) => (
-            <div key={index}>
-              {/* Name and Level */}
-              <div className="flex justify-between mb-1">
-                <span className="font-medium text-white">{lang.name}</span>
-                <span className="text-sm text-gray-400">{lang.level}</span>
-              </div>
-
-              {/* Progress Bar */}
-              <div className="w-full bg-gray-800 rounded-full h-4 overflow-hidden relative">
-                {/* Static filled portion */}
-                <div
-                  className="h-4 rounded-full bg-orange-500"
-                  style={{ width: `${lang.percent}%` }}
-                ></div>
-
-                {/* Only Spanish: moving shine */}
-                {lang.name === "Spanish" && (
-                  <div
-                    className="absolute top-0 left-0 h-4 w-1/5 bg-orange-300 rounded-full animate-loading-segment"
-                    style={{ maxWidth: `${lang.percent}%` }}
-                  ></div>
-                )}
-              </div>
+        {languages.map((lang, index) => (
+        <div key={index}>
+            <div className="flex justify-between mb-1">
+            <span className="font-medium text-white">{lang.name}</span>
+            <span className="text-sm text-gray-400">{lang.level}</span>
             </div>
-          ))}
+            <div className="w-full bg-gray-800 rounded-full h-4 overflow-hidden">
+            <div
+                className={`h-4 rounded-full transition-all duration-500 ${
+                lang.name === "Spanish" ? "bg-orange-500 animate-pulse-bar" : "bg-orange-500"
+                }`}
+                style={{ width: `${lang.percent}%` }}
+            ></div>
+            </div>
         </div>
-      </div>
+        ))}
+
+        </div>
+    </div>
 
 
     <div className="max-w-5xl mx-auto px-4">
@@ -170,9 +145,8 @@ const LanguagesSection = () => {
           </div>
         ))}
       </div>
-      </div>
     </section>
-      );
+  );
 };
 
 export default LanguagesSection;

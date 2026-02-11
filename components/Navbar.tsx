@@ -9,26 +9,28 @@ export default function Navbar() {
       </Link>
 
       <div className="flex gap-3">
-        <Link href="#projects">
-          <Button variant="default" size="sm" className="bg-orange-500/20 border border-orange-500/50 text-orange-400 hover:bg-orange-500/40 transition-colors duration-200 cursor-pointer">
-            Home
-          </Button>
-        </Link>
         <Link href="#about">
           <Button variant="default" size="sm" className="bg-orange-500/20 border border-orange-500/50 text-orange-400 hover:bg-orange-500/40 transition-colors duration-200 cursor-pointer">
             About
           </Button>
         </Link>
-        <Link href="#publications">
+        <Link href="#experience">
           <Button variant="default" size="sm" className="bg-orange-500/20 border border-orange-500/50 text-orange-400 hover:bg-orange-500/40 transition-colors duration-200 cursor-pointer">
-            Publications
+            Experience & Education
           </Button>
         </Link>
         <Link href="#skills">
           <Button variant="default" size="sm" className="bg-orange-500/20 border border-orange-500/50 text-orange-400 hover:bg-orange-500/40 transition-colors duration-200 cursor-pointer">
-            Skills
+            Expertise
           </Button>
         </Link>
+
+        <Link href="#publications">
+          <Button variant="default" size="sm" className="bg-orange-500/20 border border-orange-500/50 text-orange-400 hover:bg-orange-500/40 transition-colors duration-200 cursor-pointer">
+            Research
+          </Button>
+        </Link>
+
         <Link href="#contact">
           <Button variant="default" size="sm" className="bg-orange-500/20 border border-orange-500/50 text-orange-400 hover:bg-orange-500/40 transition-colors duration-200 cursor-pointer">
             Contact

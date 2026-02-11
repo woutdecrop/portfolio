@@ -9,13 +9,9 @@ const skillCategories: SkillCategory[] = [
     skills: ["Python", "R", "Julia", "Matlab", "SQL", "Bash"],
   },
   {
-    title: "Machine Learning",
-    skills: ["PyTorch", "TensorFlow", "scikit-learn", "Keras", ],
-  },
-  {
-    title: "Tools & Platforms",
-    skills: ["Git", "Docker", "Jupyter", "VS Code"],
-  },
+    title: "Machine Learning & Tools",
+    skills: ["PyTorch", "TensorFlow", "scikit-learn", "Keras","Git", "Docker", "Jupyter", "VS Code" ],
+  }
 ];
 
 
