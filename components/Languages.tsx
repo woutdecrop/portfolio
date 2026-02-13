@@ -7,6 +7,7 @@ const languages = [
   { name: "Spanish", level: "B1", percent: 70 },
   { name: "French", level: "B1", percent: 50 },
   { name: "Italian", level: "A2", percent: 40 },
+  { name: "German", level: "basic", percent: 25 },
 ];
 
 const languageTimeline = [

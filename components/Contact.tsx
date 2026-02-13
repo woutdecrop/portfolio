@@ -38,8 +38,8 @@ export function Contact() {
             
             <div className="space-y-4">
               <div className="flex items-start">
-                <div className="p-3 bg-blue-100 rounded-lg mr-4">
-                  <Mail className="text-blue-600" size={24} />
+                <div className="p-3 bg-orange-100 rounded-lg mr-4">
+                  <Mail className="text-orange-600" size={24} />
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1 text-white">Email</h4>
@@ -49,8 +49,8 @@ export function Contact() {
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="p-3 bg-blue-100 rounded-lg mr-4">
-                  <MapPin className="text-blue-600" size={24} />
+                <div className="p-3 bg-orange-100 rounded-lg mr-4">
+                  <MapPin className="text-orange-600" size={24} />
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1 text-white">Location</h4>
@@ -74,7 +74,7 @@ export function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                   placeholder="Your Name"
                 />
               </div>
@@ -90,7 +90,7 @@ export function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -106,14 +106,14 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
                   placeholder="Your message..."
                 />
               </div>
               
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center"
+                className="w-full px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors flex items-center justify-center"
               >
                 Send Message
                 <Send size={18} className="ml-2" />

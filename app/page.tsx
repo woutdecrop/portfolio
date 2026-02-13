@@ -1,47 +1,51 @@
-'use client'
+"use client"; // must be at the top
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { useMode } from "@/components/ModeContext"
 import Navbar from "@/components/Navbar"
-import { Experience } from "@/components/Experience"
-import PublicationsSection from "@/components/Publications"
-import AboutSection from "@/components/about"
-import SkillsSection from "@/components/Skills"
-import FooterSection from "@/components/Footer"
-import Contact from "@/components/Contact"
 import HeroSection from "@/components/Hero"
-import RepoSection from "@/components/Repos"
+import AboutSection from "@/components/about"
+import { Experience } from "@/components/Experience"
+import SkillsSection from "@/components/Skills"
 import LanguagesSection from "@/components/Languages"
- // <- import Navbar
+import PublicationsSection from "@/components/Publications"
+import RepoSection from "@/components/Repos"
+import FooterSection from "@/components/Footer"
+
+// personal sections
+import MusicSection from "@/components/personal/MusicSection"
+import TravelSection from "@/components/personal/TravelSection"
+import StravaSection from "@/components/personal/StravaSection"
+import PersonsalSection from "@/components/personal/PersonalSection"
+import ContactSection from "@/components/personal/ContactSection"
+import FunProjectSection from "@/components/personal/ProjectsSection";
 
 export default function Home() {
+  const { mode } = useMode()
+
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      
-      {/* About section */}
-      <AboutSection />
-
-      {/* Experience section */}
-      <Experience />
-
-      {/* Skills section */}
-      <SkillsSection />
-      
-      {/* About section */}
-      <LanguagesSection />
-
-      {/* Publications section */}
-      <PublicationsSection />
-
-      {/* Skills section */}
-      <RepoSection />
-
-      {/* Footer section */}
-      <FooterSection />
+      <Navbar /> {/* Navbar must also be client */}
+      {mode === "professional" ? (
+        <>
+          <HeroSection />
+          <AboutSection />
+          <Experience />
+          <SkillsSection />
+          <LanguagesSection />
+          <PublicationsSection />
+          <RepoSection />
+          <FooterSection />
+        </>
+      ) : (
+        <>
+          <HeroSection isPersonal />
+          <PersonsalSection/>
+          <MusicSection />
+          <TravelSection />
+          <FunProjectSection  />
+          <ContactSection />
+        </>
+      )}
     </>
   )
 }
-

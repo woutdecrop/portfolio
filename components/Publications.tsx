@@ -42,7 +42,6 @@ const publications: Publication[] = [
     link: "https://www.sciencedirect.com/science/article/pii/S1574954125003152",
   },
 ];
-
 const PublicationsSection = () => {
   return (
     <section id="publications" className="py-24 px-6 bg-black">

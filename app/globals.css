@@ -140,5 +140,5 @@
 
 
 .animate-loading-segment {
-  animation: loading-segment 1s linear infinite;
+  animation: loading-segment 0.75s linear infinite;
 }
