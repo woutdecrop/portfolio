@@ -123,27 +123,31 @@ export default function TravelSection() {
             projectionConfig={{ rotate: rotation, scale: 250 }}
             className="shadow-xl rounded-full"
           >
-            <Geographies geography="/world.geojson">
-              {({ geographies }) =>
-                geographies.map((geo) => {
-                  const isVisited = visitedCountries.includes(geo.properties.name);
-                  return (
-                    <Geography
-                      key={geo.rsmKey}
-                      geography={geo}
-                      fill={isVisited ? "#3B82F6" : "#1f2937"}
-                      stroke="#111"
-                      style={{
-                        default: { outline: "none" },
-                        hover: { fill: "#60a5fa", outline: "none", cursor: "pointer" },
-                        pressed: { outline: "none" },
-                      }}
-                      onClick={() => isVisited && handleCountryClick(geo.properties.name)}
-                    />
-                  );
-                })
-              }
-            </Geographies>
+          <Geographies geography="/world.geojson">
+          {
+            // @ts-ignore: ignore geographies destructuring
+            ({ geographies }) =>
+              geographies.map((geo: any) => {
+                const isVisited = visitedCountries.includes(geo.properties.name);
+                return (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    fill={isVisited ? "#3B82F6" : "#1f2937"}
+                    stroke="#111"
+                    style={{
+                      default: { outline: "none" },
+                      hover: { fill: "#60a5fa", outline: "none", cursor: "pointer" },
+                      pressed: { outline: "none" },
+                    }}
+                    onClick={() => isVisited && handleCountryClick(geo.properties.name)}
+                  />
+                );
+              })
+          }
+        </Geographies>
+
+
           </ComposableMap>
         </div>
 
