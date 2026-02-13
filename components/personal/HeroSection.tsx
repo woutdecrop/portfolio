@@ -4,11 +4,13 @@ import { ArrowDown } from "lucide-react"
 import Image from "next/image"
 import profilePhoto from "@/assets/profile-photo..jpg"
 
-const HeroSection = () => {
+
+const HeroPersonanlSection = () => {
 
   return (
     <section
-      className={`min-h-screen flex flex-col justify-center items-center px-6 py-20 relative transition-colors duration-500 ${ "bg-black"
+      className={`min-h-screen flex flex-col justify-center items-center px-6 py-20 relative transition-colors duration-500 ${
+ "bg-neutral-950" 
       }`}
     >
       <div className="max-w-4xl mx-auto text-center">
@@ -18,18 +20,18 @@ const HeroSection = () => {
             alt="Wout Decrop"
             width={160}
             height={160}
-            className={`rounded-full mx-auto shadow-2xl transition-all duration-500 ${
-                 "border-2 border-orange-500"
+            className={`rounded-full mx-auto shadow-2xl transition-all duration-500 ${"border-2 border-blue-400"
             }`}
           />
         </div>
 
         {/* Subtitle */}
         <p
-          className={`font-semibold tracking-widest uppercase text-sm mb-6 transition-colors duration-500 ${"text-orange-500"
+          className={`font-semibold tracking-widest uppercase text-sm mb-6 transition-colors duration-500 ${
+            "text-blue-100" 
           }`}
         >
-          { "Marine AI Engineer"}
+          {"Curious about the ocean 🌊" }
         </p>
 
         {/* Name */}
@@ -39,7 +41,7 @@ const HeroSection = () => {
 
         <h2
           className={`text-7xl font-bold bg-clip-text text-transparent mb-8 transition-all duration-500 ${
-              "bg-gradient-to-r from-orange-500 to-orange-400"
+ "bg-gradient-to-r from-blue-400 to-pink-400"
           }`}
         >
           Decrop
@@ -47,7 +49,7 @@ const HeroSection = () => {
 
         {/* Description */}
         <p className="text-gray-300 text-lg max-w-2xl mx-auto transition-all duration-500">
-        "Building AI models for plankton & vessel detection. Python, ML, & environmental research at VLIZ."
+          {"Training models for the North Sea while travelling the world."}
         </p>
 
         {/* Optional subtle scroll cue */}
@@ -59,4 +61,4 @@ const HeroSection = () => {
   )
 }
 
-export default HeroSection
+export default HeroPersonanlSection

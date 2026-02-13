@@ -18,7 +18,7 @@ import StravaSection from "@/components/personal/StravaSection"
 import PersonsalSection from "@/components/personal/PersonalSection"
 import ContactSection from "@/components/personal/ContactSection"
 import FunProjectSection from "@/components/personal/ProjectsSection";
-
+import HeroPersonalSection from "@/components/personal/HeroSection"
 export default function Home() {
   const { mode } = useMode()
 
@@ -38,7 +38,7 @@ export default function Home() {
         </>
       ) : (
         <>
-          <HeroSection isPersonal />
+          <HeroPersonalSection />
           <PersonsalSection/>
           <MusicSection />
           <TravelSection />
