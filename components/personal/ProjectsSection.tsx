@@ -16,22 +16,25 @@ const FunProjectSection = () => {
           legendary overlays — purely for cultural and highly academic reasons.
         </p>
 
-        <div className="max-w-4xl mx-auto bg-gray-900 rounded-2xl p-8 border border-blue-500/20 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10">
+      <div className="flex flex-col md:flex-row items-start gap-6">
 
-            <div className="flex items-start gap-6">
-            {/* Image */}
-            <div className="w-[200px] flex-shrink-0">
-                <div className="overflow-hidden rounded-xl border border-blue-500/30 shadow-lg">
-                <Image
-                    src={nilsImgr}
-                    alt="Nils Camera Tracker preview"
-                    className="w-full h-auto object-cover rounded-lg"
-                />
-                </div>
-                <p className="text-gray-500 text-xs text-center mt-3">
-                Totally serious research interface
-                </p>
-            </div>
+        {/* Image */}
+        <div className="w-full md:w-[200px] flex-shrink-0">
+          <div className="overflow-hidden rounded-xl border border-blue-500/30 shadow-lg">
+            <Image
+              src={nilsImgr}
+              alt="Nils Camera Tracker preview"
+              className="w-full h-auto object-cover rounded-lg"
+            />
+          </div>
+          <p className="text-gray-500 text-xs text-center mt-3">
+            Totally serious research interface
+          </p>
+        </div>
+
+        {/* Text */}
+        <div className="flex-1">
+
 
             {/* Text */}
             <div className="flex-1">
