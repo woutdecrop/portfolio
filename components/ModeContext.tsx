@@ -15,21 +15,31 @@ export const ModeProvider = ({ children }: { children: ReactNode }) => {
 
   // Sync with URL hash on mount and hash change
   useEffect(() => {
-    const handleHashChange = () => {
+    const handleRouteChange = () => {
       const hash = window.location.hash.replace("#", "")
+      const searchParams = new URLSearchParams(window.location.search)
+      const queryMode = searchParams.get("mode")
+
       // Add other personal sections if they also trigger personal mode
-      if (hash === "personal" || hash === "music" || hash === "travel" || hash === "funproject" || hash === "contact") {
+      if (
+        hash === "personal" || hash === "music" || hash === "travel" || hash === "funproject" || hash === "contact" ||
+        queryMode === "personal"
+      ) {
         setMode("personal")
       } else {
         setMode("professional")
       }
     }
 
-    // Check initial hash
-    handleHashChange()
+    // Check initial route
+    handleRouteChange()
 
-    window.addEventListener("hashchange", handleHashChange)
-    return () => window.removeEventListener("hashchange", handleHashChange)
+    window.addEventListener("hashchange", handleRouteChange)
+    window.addEventListener("popstate", handleRouteChange)
+    return () => {
+      window.removeEventListener("hashchange", handleRouteChange)
+      window.removeEventListener("popstate", handleRouteChange)
+    }
   }, [])
 
   const toggleMode = () => {
@@ -39,11 +49,11 @@ export const ModeProvider = ({ children }: { children: ReactNode }) => {
 
     // Run side effects outside of the React setState callback to avoid Router conflicts
     setTimeout(() => {
-      // Update URL hash
+      // Update URL (Prefer hash for internal navigation, but clear query if switching back to pro)
       if (newMode === "personal") {
         window.history.pushState(null, "", "#personal")
       } else {
-        // Clear hash for professional
+        // Clear hash and query params for professional
         window.history.pushState(null, "", window.location.pathname)
       }
 
