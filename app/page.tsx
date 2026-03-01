@@ -8,6 +8,7 @@ import { Experience } from "@/components/Experience"
 import SkillsSection from "@/components/Skills"
 import LanguagesSection from "@/components/Languages"
 import PublicationsSection from "@/components/Publications"
+import ConferencesSection from "@/components/Conferences"
 import RepoSection from "@/components/Repos"
 import FooterSection from "@/components/Footer"
 
@@ -33,16 +34,17 @@ export default function Home() {
           <SkillsSection />
           <LanguagesSection />
           <PublicationsSection />
+          <ConferencesSection />
           <RepoSection />
           <FooterSection />
         </>
       ) : (
         <>
           <HeroPersonalSection />
-          <PersonsalSection/>
+          <PersonsalSection />
           <MusicSection />
           <TravelSection />
-          <FunProjectSection  />
+          <FunProjectSection />
           <ContactSection />
         </>
       )}

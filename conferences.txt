@@ -1,0 +1,23 @@
+I'm excited to share that I had the opportunity to present at the DCLDE conference in Rotterdam! 🌟🇳🇱 During the event, I showcased a poster and delivered a speed talk on the innovative application of Convolutional Neural Networks (CNNs) in marine science. My presentation highlighted how we use CNN technology to monitor Marine Protected Areas by analyzing underwater acoustic data for vessel detection and classification, aiding in the battle against illegal fishing.
+We're currently compiling our findings into a paper for further discussion. Stay tuned for more updates on this exciting journey! 🚤🔍
+hashtag#MarineScience hashtag#CNNs hashtag#DCLDE2024 hashtag#IllegalFishing
+
+I’m excited to share that I presented at the ICUA (https://icua2024.org) conference in Bath from 17-20 June 2024! 🌊🇬🇧 My presentation highlighted the innovative application of Convolutional Neural Networks (CNNs) in marine science, specifically focusing on monitoring Marine Protected Areas. By analyzing underwater acoustic data without just relying on AIS data, we can detect and classify vessels, aiding in the fight against illegal fishing.
+
+Our findings are currently being compiled into a paper for further discussion. Stay tuned for more updates on this exciting journey! 🚤🔍
+
+hashtag#MarineScience hashtag#CNNs hashtag#ICUA2024 hashtag#IllegalFishing
+
+Discovering the FlowCam Phytoplankton Identification with Wout Decrop (VLIZ - Flanders Marine Institute) during the iMagine session at hashtag#EGI2025.
+
+The service allows the processing of FlowCam images to determine the taxonomic composition of phytoplankton samples. The service includes setting up an operational environment for users to reuse pre-trained models, refining the AI tools for taxonomic identification, and improving the FAIRness of the full image library data, as well as sampled training sets.
+
+Learn more on the iMagine website: https://lnkd.in/dhDKVrCR
+
+Follow the plenary live: https://lnkd.in/dRUCS8fb
+Session agenda: https://go.egi.eu/spnqu
+
+
+I am thrilled to announce that I presented at the VLIZ Marine Science Day hashtag#VMSD2024, highlighting the innovative application of AI in marine science. My presentation delved into using AI technology to monitor Marine Protected Areas through the analysis of underwater acoustic data for vessel detection and classification.
+
+Our findings are currently being compiled into a paper for discussion. Stay tuned for more updates on this exciting journey! 🚤🔍 hashtag#MarineScience hashtag#AI hashtag#CNNs hashtag#VMSD2024
