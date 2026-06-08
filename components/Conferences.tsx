@@ -12,6 +12,15 @@ const conferences = [
         rotation: 'rotate-2',
     },
     {
+        id: 6,
+        type: 'image',
+        src: '/conferences/oceanoise2026_pres.jpg',
+        text: 'Ocean Noise 2026: presenting in Vilanova i la Geltru.',
+        date: '25-29 May 2026',
+        location: 'Vilanova i la Geltru, Spain',
+        rotation: '-rotate-2',
+    },
+    {
         id: 1,
         type: 'video',
         src: '/conferences/VMSD.mp4',
