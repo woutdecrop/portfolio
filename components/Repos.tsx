@@ -21,7 +21,7 @@ const RepoSection = () => {
       link: "https://github.com/ai4os-hub/audio-vessel-classification"
     }
   ];
-  return <section id="repos" className="py-24 px-6 bg-black">/* GitHub Projects Section */
+  return <section id="repos" className="py-24 px-6 bg-black">
         <div>
           <h3 className="font-serif text-3xl font-semibold mb-8 text-white text-center">Featured GitHub Projects</h3>
           <div className="grid md:grid-cols-2 gap-6">

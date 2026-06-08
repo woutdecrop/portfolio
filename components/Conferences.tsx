@@ -3,6 +3,15 @@ import Image from 'next/image';
 
 const conferences = [
     {
+        id: 0,
+        type: 'image',
+        src: '/conferences/oceannoise2026_poster.jpg',
+        text: 'Ocean Noise 2026: poster presentation on marine AI work.',
+        date: '25-29 May 2026',
+        location: 'Vilanova i la Geltru, Spain',
+        rotation: 'rotate-2',
+    },
+    {
         id: 1,
         type: 'video',
         src: '/conferences/VMSD.mp4',

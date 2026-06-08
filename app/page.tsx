@@ -15,10 +15,8 @@ import FooterSection from "@/components/Footer"
 // personal sections
 import MusicSection from "@/components/personal/MusicSection"
 import TravelSection from "@/components/personal/TravelSection"
-import StravaSection from "@/components/personal/StravaSection"
 import PersonsalSection from "@/components/personal/PersonalSection"
 import ContactSection from "@/components/personal/ContactSection"
-import FunProjectSection from "@/components/personal/ProjectsSection";
 import HeroPersonalSection from "@/components/personal/HeroSection"
 import ScrollReveal from "@/components/ScrollReveal"
 
@@ -46,7 +44,6 @@ export default function Home() {
           <ScrollReveal delay={0.2}><PersonsalSection /></ScrollReveal>
           <ScrollReveal delay={0.2}><MusicSection /></ScrollReveal>
           <ScrollReveal delay={0.2}><TravelSection /></ScrollReveal>
-          <ScrollReveal delay={0.2}><FunProjectSection /></ScrollReveal>
           <ScrollReveal delay={0.2}><ContactSection /></ScrollReveal>
         </>
       )}

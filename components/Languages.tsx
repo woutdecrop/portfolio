@@ -4,7 +4,7 @@ import { Flag, Loader2 } from "lucide-react";
 const languages = [
   { name: "Dutch", level: "Native", percent: 100 },
   { name: "English", level: "Fluent", percent: 100 },
-  { name: "Spanish", level: "B1", percent: 70 },
+  { name: "Spanish", level: "B2", percent: 82 },
   { name: "French", level: "B1", percent: 50 },
   { name: "Italian", level: "A2", percent: 40 },
   { name: "German", level: "basic", percent: 25 },
@@ -16,7 +16,7 @@ const languageTimeline = [
   { year: "2024-2025", language: "Spanish", course: "Conversatiecursus Spaans voor beginners", level: "A2+", start: "2024-09-01", end: "2024-12-30", certificateDate: "2024-12-30", score: 13 },
   { year: "2024-2025", language: "Italian", course: "Praktisch Italiaans 2", level: "A2", start: "2025-01-01", end: "2025-06-30", certificateDate: "2025-06-30", score: 14 },
   { year: "2025-2026", language: "Spanish", course: "Praktisch Spaans 3", level: "B1", start: "2025-09-01", end: "2025-12-18", certificateDate: "2025-12-18", score: 15 },
-  { year: "2025-2026", language: "Spanish", course: "Praktisch Spaans 4", level: "B2", start: "2026-01-01", end: "2026-06-25", certificateDate: "2026-06-25" },
+  { year: "2025-2026", language: "Spanish", course: "Praktisch Spaans 4", level: "B2", start: "2026-01-01", end: "2026-06-08", certificateDate: "2026-06-08", score: 15 },
 ];
 
 const LanguagesSection = () => {

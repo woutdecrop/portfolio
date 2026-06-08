@@ -3,10 +3,42 @@ import { Briefcase, GraduationCap, Award } from 'lucide-react';
 export function Experience() {
   const workExperience = [
     {
-      position: 'Marine AI Engineer',
+      position: 'AQUASPECT Project',
+      company: 'VLIZ - Flanders Marine Institute',
+      period: 'Aug 2025 - Present',
+      meta: 'Full-time · On-site · Ostend, Belgium',
+      description:
+        'Research on innovative methods for assessing spatial ecosystem patterns and environmental characteristics using advanced imaging technologies, artificial intelligence, and automated data-analysis workflows. The project improves the quality, consistency, and scalability of marine ecosystem assessments.',
+      link: 'https://www.socib.es/en/what-we-do/research/projects/aquaspect',
+      linkLabel: 'Project page',
+    },
+    {
+      position: 'AXOLOTL Project',
+      company: 'VLIZ - Flanders Marine Institute',
+      period: 'Sep 2024 - Present',
+      meta: 'Full-time · On-site · Ostend, Belgium',
+      description:
+        'Development and application of deep-learning techniques for marine observation across multiple spatial scales, ranging from aerial and satellite imagery to underwater imaging systems. The project advances automated ecosystem monitoring and conservation through state-of-the-art AI methodologies.',
+      link: 'https://axolotl-project.eu/',
+      linkLabel: 'Project page',
+    },
+    {
+      position: 'LifeWatch Belgium',
       company: 'VLIZ - Flanders Marine Institute',
       period: 'Feb 2023 - Present',
-      description: 'Working fulltime on marine AI projects, developing machine learning pipelines and AI applications for oceanographic research in Oostende, Belgium.',
+      meta: 'Full-time · On-site · Ostend, Belgium',
+      description:
+        'Further development and optimization of image classifiers for the FlowCytometer, ZooScan, FlowCam, and PI10 imaging platform. This includes improving classification accuracy, expanding taxonomic coverage, developing data-processing pipelines, and supporting automated biodiversity monitoring workflows.',
+    },
+    {
+      position: 'iMagine Project',
+      company: 'VLIZ - Flanders Marine Institute',
+      period: 'Feb 2023 - Aug 2025',
+      meta: 'Full-time · On-site · Ostend, Belgium',
+      description:
+        'Development of deep-learning models for automated plankton image classification, with a focus on improving taxonomic identification, data quality, and the scalability of marine biodiversity monitoring through advanced machine-learning techniques and image-analysis workflows.',
+      link: 'https://www.imagine-ai.eu/',
+      linkLabel: 'Project page',
     },
     {
       position: 'Engineering Intern, Marine Observatory Centre',
@@ -97,7 +129,18 @@ export function Experience() {
                     <h4 className="text-xl mb-1 text-white">{job.position}</h4>
                     <p className="text-gray-400 mb-2">{job.company}</p>
                     <p className="text-sm text-gray-500 mb-3">{job.period}</p>
+                    {job.meta && <p className="text-sm text-gray-500 mb-3">{job.meta}</p>}
                     <p className="text-gray-300">{job.description}</p>
+                    {job.link && (
+                      <a
+                        href={job.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-block mt-4 text-sm font-medium text-orange-400 hover:text-orange-300 transition-colors"
+                      >
+                        {job.linkLabel} →
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}
