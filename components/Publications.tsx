@@ -11,6 +11,14 @@ interface Publication {
 
 const publications: Publication[] = [
   {
+    title: "Plankton imager 10 monitoring in the southern North Sea: an open workflow for classification, morphometry and DwC-A publication",
+    journal: "Frontiers in Marine Science",
+    year: 2026,
+    authors: "Mortelmans J, Decrop W, Heynderickx H, Cattrijsse A, Depaepe M, van Walraven L, Scott J, van Oevelen D, Deneudt K, Muñiz C",
+    link: "https://doi.org/10.3389/fmars.2026.1882482",
+    featured: true,
+  },
+  {
     title: "Automated image classification workflow for phytoplankton monitoring",
     journal: "Frontiers in Marine Science",
     year: 2025,
@@ -35,11 +43,11 @@ const publications: Publication[] = [
     featured: true,
   },
   {
-    title: "Best practices for AI-based image analysis applications in plankton research",
+    title: "Best practices for AI-based image analysis applications in aquatic sciences: The iMagine case study",
     journal: "Ecological Informatics",
     year: 2025,
-    authors: "iMagine Project Consortium, including Decrop W",
-    link: "https://www.sciencedirect.com/science/article/pii/S1574954125003152",
+    authors: "Azmi E, Alibabaei K, Kozlov V, … Decrop W, … Schaap D, Sipos G",
+    link: "https://doi.org/10.1016/j.ecoinf.2025.103306",
   },
 ];
 const PublicationsSection = () => {
