@@ -3,6 +3,14 @@ import { Briefcase, GraduationCap, Award } from 'lucide-react';
 export function Experience() {
   const workExperience = [
     {
+      position: 'ORCAS Project',
+      company: 'VLIZ - Flanders Marine Institute',
+      period: 'Sep 2026 - Present',
+      meta: 'Full-time · On-site · Ostend, Belgium',
+      description:
+        'Research on underwater acoustic sensing to protect critical offshore infrastructure in the Belgian North Sea. The project compares conventional hydrophones with Distributed Acoustic Sensing (DAS) in subsea fibre-optic cables, and develops multi-task deep-learning models that predict vessel type, distance, speed and activity from long-term, multi-channel acoustic data combined with AIS. Results feed into Marine SoundLib, extended with DAS integration, standardised ML pipelines and a governance framework for responsible dual-use data sharing. ORCAS is a VLAIO ICON project with GEOxyz, Fluves, e-BO Enterprises, Kapernikov, the Royal Military Academy and IDLab (imec – University of Antwerp).',
+    },
+    {
       position: 'AQUASPECT Project',
       company: 'VLIZ - Flanders Marine Institute',
       period: 'Aug 2025 - Present',
